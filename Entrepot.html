@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les ventes</title>
+    <title>Les Entreprots</title>
 </head>
 <body>
 
@@ -11,18 +11,14 @@
 
     <div class="h-auto w-5/12 p-5 max-w-[354px] flex flex-col justify-start items-start">
         <form action="#" class="p-0 w-full">
-            <h2 class="text-3xl font-bold">Inserer une vente </h2>
+            <h2 class="text-3xl font-bold">Inserer un Entreprot </h2>
             <div class="mt-5">
-                <p>nom de l'article</p>
-                <select type="password" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  ">
-                    <option>Produit phoyo</option>
-                    <option>Produit phoyo</option>
-                    <option>Produit phoyo</option>
-                    <option>Produit phoyo</option>
-                </select></div>
+                <p>Nom de l'Entreprot </p>
+                <input type="text" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent " placeholder="Nom de l'Entreprot">
+            </div>
             <div class="mt-2">
                 
-                <p>nom du client</p>
+                <p>catégorie</p>
                 <select type="password" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  ">
                     <option>Produit phoyo</option>
                     <option>Produit phoyo</option>
@@ -34,9 +30,17 @@
                 <p>Quantité</p>
                 <input type="number" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="Quantité">
             </div>
-           
             <div class="mt-2">
-                <p>Date de vente</p>
+                <p>Prix Unitaire</p>
+                <input type="number" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="Prix unitaire">
+            </div>
+
+            <div class="mt-2">
+                <p>Date de fabrication</p>
+                <input type="date" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="date de fabrication">
+            </div>
+            <div class="mt-2">
+                <p>Date d'expiration</p>
                 <input type="date" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="date de fabrication">
             </div>
             
@@ -52,9 +56,9 @@
     <div class="flex flex-col-full w-full flex justify-start items-start py-8">
         <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
             <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
-                <h2 class="font-semibold text-gray-800">Les ventes</h2>
-               
-                <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>            
+                <h2 class="font-semibold text-gray-800">Les Entreprots</h2>
+                <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a> 
+                                      
             </header>
             <div class="p-3">
                 <div class="overflow-x-auto">
@@ -65,18 +69,23 @@
                                     <div class="font-semibold text-left">No:</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nom de l'article</div>
+                                    <div class="font-semibold text-left">Nom</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Nom du client</div>
+                                    <div class="font-semibold text-left">catégorie</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-left">Quantité</div>
                                 </th>
                                 <th class="p-2 whitespace-nowrap">
-                                    <div class="font-semibold text-center">date de vente</div>
+                                    <div class="font-semibold text-center">prix unitaire</div>
                                 </th>
-                                
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center">date de fabrication </div>
+                                </th>
+                                 <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center">date de d'expiration</div>
+                                </th>
                                 <th class="p-2 whitespace-nowrap">
                                     <div class="font-semibold text-center">Modification / suppresion</div>
                                 </th>
@@ -100,24 +109,10 @@
                                     <div class=" text-center">1400 </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Supprimer</button></a>  </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">1</div>
+                                    <div class="text-center"> 14/07/2023</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">alexshatov@gmail.com</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center">??</div>
-                                </td>
-                                <td class="p-2 whitespace-nowrap">
-                                    <div class=" text-center">1400 </div>
+                                    <div class="text-center"> 14/12/2023</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Supprimer</button></a>  </div>
@@ -128,19 +123,22 @@
                                     <div class="text-left">1</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">alexshatov@gmail.com</div>
+                                    <div class="text-left">philip.h@gmail.com</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                    <div class="text-left font-medium text-green-500">$2,767.04</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center">??</div>
+                                    <div class="text-lg text-center">??</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class=" text-center">1400 </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Supprimer</button></a>  </div>
+                                    <div class="text-center"> 14/07/2023</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> 14/12/2023</div>
                                 </td>
                             </tr>
                             <tr>
@@ -148,19 +146,22 @@
                                     <div class="text-left">1</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">alexshatov@gmail.com</div>
+                                    <div class="text-left">mirkofisuk@gmail.com</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                    <div class="text-left font-medium text-green-500">$2,996.00</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center">??</div>
+                                    <div class="text-lg text-center">??</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class=" text-center">1400 </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Supprimer</button></a>  </div>
+                                    <div class="text-center"> 14/07/2023</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> 14/12/2023</div>
                                 </td>
                             </tr>
                             <tr>
@@ -168,19 +169,45 @@
                                     <div class="text-left">1</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left">alexshatov@gmail.com</div>
+                                    <div class="text-left">olga.s@cool.design</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                    <div class="text-left font-medium text-green-500">$1,220.66</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center">??</div>
+                                    <div class="text-lg text-center">??</div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
                                     <div class=" text-center">1400 </div>
                                 </td>
                                 <td class="p-2 whitespace-nowrap">
-                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Supprimer</button></a>  </div>
+                                    <div class="text-center"> 14/07/2023</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> 14/12/2023</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">longburak@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$1,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-lg text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> 14/07/2023</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> 14/12/2023</div>
                                 </td>
                             </tr>
                         </tbody>
