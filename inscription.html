@@ -20,14 +20,28 @@
             </div>
             <form action="#" class="p-0">
                 <div class="mt-5">
-
-                    <input type="email" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent " placeholder="Votre Email">
+                    <label class="mb-2 block text-xs font-semibold">Nom de l'utilisateur</label>
+                    <input type="text" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent " placeholder="Votre Nom">
+                </div>
+                
+                <div class="mt-5">
+                    
+                    <label class="mb-2 block text-xs font-semibold">Type d'utilisateurs</label>
+                    <select class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  ">
+                    <option>Administrateur</option>
+                    <option>Simple utilisateurs</option>
+                    <option>Magasinier</option>
+                    </select>
                 </div>
                 <div class="mt-5">
-                    <input type="text" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent " placeholder="Votre nom">
-                </div>
-                <div class="mt-5">
+                    <label class="mb-2 block text-xs font-semibold">Mot de passe :</label>
                     <input type="password" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="Mot de passe">
+                </div>
+
+                <div class="mt-5">
+                    
+                    <label class="mb-2 block text-xs font-semibold">confirmer Votre Mot de passe :</label>
+                    <input type="password" class="block w-full p-2 border rounded border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent  " placeholder="confirmer votre mot de passe">
                 </div>
 
                
@@ -36,8 +50,6 @@
                     <input type="submit" value="inscrivez-vous" class="py-3 bg-green-500 cursor-pointer text-white w-full rounded hover:bg-green-600">
                 </div>
             </form>
-            <a class="" href="./login" data-test="Link"><span class="block  p-5 text-center text-gray-800  text-xs ">Avez Vous deja un Compte?</span></a>
-            <a class="" href="./index.html" data-test="Link"><span class="block  p-5 text-center text-green-400  text-xl ">Se connecter</span></a>
         </div>
 
 
