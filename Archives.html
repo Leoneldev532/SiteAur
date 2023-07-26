@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+</head>
+<body>
+    <div class="w-full flex justify-start flex-col items-start">
+        
+       <header class="text-gray-600 body-font fixed bg-white mb-16">
+         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          
+           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+             <a href="#article" class="mr-5 hover:text-gray-900">Les articles</a>
+             <a href="#clients" class="mr-5 hover:text-gray-900">les clients</a>
+             <a href="#ventes" class="mr-5 hover:text-gray-900">les ventes</a>
+             <a href="#fournisseurs" class="mr-5 hover:text-gray-900">les fournisseurs</a>
+             <a href="#commandes" class="mr-5 hover:text-gray-900">les commandes</a>
+             <a href="#entrepots" class="mr-5 hover:text-gray-900">les entrepots</a>
+           </nav>
+         </div>
+       </header>
+        
+        <section class="antialiased bg-gray-100 text-gray-600 h-screen flex justify-start items-start px-4 w-full">
+            
+            <div class="flex flex-col w-full flex  justify-start items-start py-8">
+                <h2 class="py-4">Les archives des Articles </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">Les Articles</h2>
+                        <form class="flex">
+                            <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                            <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+                    </form>
+                        <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>                      
+                    </header>
+                    <div class="p-3">
+                        <div class="overflow-x-auto">
+                            <table class="table-auto w-full">
+                                <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">No:</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Nom</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">catégorie</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Quantité</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">prix unitaire</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">date de fabrication </div>
+                                        </th>
+                                         <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">date de d'expiration</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">Modifcation / archivage</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class=" text-center">1400 </div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/07/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/12/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">philip.h@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,767.04</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class=" text-center">1400 </div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/07/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/12/2023</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">mirkofisuk@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,996.00</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class=" text-center">1400 </div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/07/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/12/2023</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">olga.s@cool.design</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$1,220.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class=" text-center">1400 </div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/07/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/12/2023</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">longburak@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$1,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class=" text-center">1400 </div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/07/2023</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> 14/12/2023</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="py-4" id="commandes">Les archives des commandes </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">commande</h2>
+                <form class="flex">
+                    <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                    <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+            </form>
+                <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Exporter via Excel</button></a> 
+                                      
+            </header>
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">No:</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nom de l'article</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nom du fournisseur </div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Quantité</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">prix Unitaire</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">prix Total</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Date de commande</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Modifer / archiver</div>
+                                </th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25.255.25</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25$</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">17/05/2022</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25.255.25</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25$</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">17/05/2022</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25.255.25</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25$</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">17/05/2022</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25.255.25</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25$</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">17/05/2022</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25.255.25</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">1.25$</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">17/05/2022</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                </div>
+                <h2 class="py-4" id="clients">Les archives des Clients </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">Clients</h2>
+                        <form class="flex">
+                            <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                            <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+                    </form>
+                        <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">Exporter via Excel</button></a> 
+                                              
+                    </header>
+                    <div class="p-3">
+                        <div class="overflow-x-auto">
+                            <table class="table-auto w-full">
+                                <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">No:</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Nom du client</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">prenom du client </div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Numero de téléphone</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Adresse</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">Modifcation / archivage</div>
+                                        </th>
+        
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">17/05/2022</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">17/05/2022</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">17/05/2022</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">17/05/2022</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">17/05/2022</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                 <h2 class="py-4" id="ventes">Les archives des Ventes </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">Les ventes</h2>
+                <form class="flex">
+                    <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                    <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+            </form>
+                <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>            
+            </header>
+            <div class="p-3">
+                <div class="overflow-x-auto">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">No:</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nom de l'article</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Nom du client</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Quantité</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center">date de vente</div>
+                                </th>
+                                
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-center">Modifcation / archivage</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">alexshatov@gmail.com</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center">??</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class=" text-center">1400 </div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                </div>
+
+                <h2 class="py-4" id="fournisseurs">Les archives des fournisseurs </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">Forunisseur</h2>
+                        <div class="flex ">
+                            <form class="flex">
+                                    <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                                    <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+                            </form>
+                        </div>
+                        <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>                       
+                    </header>
+                    <div class="p-3">
+                        <div class="overflow-x-auto">
+                            <table class="table-auto w-full">
+                                <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">No:</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Nom du fournisseur</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Téléphone </div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Adresse</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Modifer / archiver</div>
+                                        </th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h2 class="py-4" id="entrepots">Les archives des entrepots </h2>
+                <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
+                    <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
+                        <h2 class="font-semibold text-gray-800">Les Entreprots</h2>
+                        <form class="flex">
+                            <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
+                            <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
+                    </form>
+                        <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a> 
+                                              
+                    </header>
+                    <div class="p-3">
+                        <div class="overflow-x-auto">
+                            <table class="table-auto w-full">
+                                <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                    <tr>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">No:</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Nom</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">lieu</div>
+                                        </th>
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-left">date de creation</div>
+                                        </th>
+                                        
+                                        <th class="p-2 whitespace-nowrap">
+                                            <div class="font-semibold text-center">Modifcation / archivage</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">alexshatov@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center">??</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">philip.h@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,767.04</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">mirkofisuk@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$2,996.00</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">olga.s@cool.design</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$1,220.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                   
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">1</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left">longburak@gmail.com</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-left font-medium text-green-500">$1,890.66</div>
+                                        </td>
+                                        <td class="p-2 whitespace-nowrap">
+                                            <div class="text-lg text-center">??</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            </div>
+           
+                
+    <script src="./tailwind.js"></script>
+</body>
+</html>
