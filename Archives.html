@@ -8,31 +8,38 @@
 <body>
     <div class="w-full flex justify-start flex-col items-start">
         
-       <header class="text-gray-600 body-font fixed bg-white mb-16">
-         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+       <header class="text-gray-600 body-font fixed bg-white w-full">
+         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-start">
           
            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-             <a href="#article" class="mr-5 hover:text-gray-900">Les articles</a>
+             <a href="#articles" class="mr-5 hover:text-gray-900">Les articles</a>
              <a href="#clients" class="mr-5 hover:text-gray-900">les clients</a>
              <a href="#ventes" class="mr-5 hover:text-gray-900">les ventes</a>
              <a href="#fournisseurs" class="mr-5 hover:text-gray-900">les fournisseurs</a>
              <a href="#commandes" class="mr-5 hover:text-gray-900">les commandes</a>
              <a href="#entrepots" class="mr-5 hover:text-gray-900">les entrepots</a>
            </nav>
+
+           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a><button>
+           </nav>
          </div>
        </header>
         
-        <section class="antialiased bg-gray-100 text-gray-600 h-screen flex justify-start items-start px-4 w-full">
+        <section class="antialiased bg-gray-100 pt-16  text-gray-600 h-screen flex justify-start items-start px-4 w-full">
             
             <div class="flex flex-col w-full flex  justify-start items-start py-8">
-                <h2 class="py-4">Les archives des Articles </h2>
+                <h2 class="py-4" id="articles">Les archives des Articles </h2>
                 <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
                     <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
-                        <h2 class="font-semibold text-gray-800">Les Articles</h2>
-                        <form class="flex">
+                        <h2 class="font-semibold text-gray-800">Articles</h2>
+                
+                    <form class="flex ">
                             <input type="search" class="rounded border border-gray-200 px-4 outline-none hover:ring-1 focus:outline-none hover:ring-gray-200" placeholder="Mot de rechercche ici " />
                             <input type="submit" value="rechercher" class="cursor-pointer bg-green-400 text-black py-2 px-2 rounded"/>
                     </form>
+                                
+                <a><button class=" text-black py-2 px-2 bg-green-200 rounded hover:bg-green-400 transition-all ease duration-500">Recherche par Qrcode</button></a>      
                         <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>                      
                     </header>
                     <div class="p-3">
