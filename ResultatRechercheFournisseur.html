@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultat Article</title>
+    <title>Resultat Fournisseurs</title>
 </head>
-<body class="flex justify-center items-center">
+<body class="flex justify-center flex-col items-center">
 
+    
     <section class="antialiased bg-gray-100 pt-16  text-gray-600 h-screen flex justify-start items-start px-4 w-full">
             
         <div class="flex flex-col w-full flex  justify-start items-start ">
-            <h2 class="py-4" id="articles">Les Articles retrouvées </h2>
+              <h2 class="py-4" id="articles">Les Fournisseurs  retrouvés </h2>
             <div class="w-full max-w-full mx-auto bg-white  shadow-lg rounded-sm border border-gray-200">
                 <header class="px-5 flex justify-between  w-full items-center py-4 border-b border-gray-100">
-                    <h2 class="font-semibold text-gray-800">Articles</h2>
-            
-                            
-            <a><button class=" text-black py-2 px-2 bg-green-200 rounded hover:bg-green-400 transition-all ease duration-500">Recherche par Qrcode</button></a>      
-            <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500  rounded">exporter via Excel</button></a>                      
-        </header>
+                    <h2 class="font-semibold text-gray-800">Forunisseurs</h2>
+                  
+                    <a><button class=" text-black py-2 px-2 bg-green-200 rounded hover:bg-green-400 transition-all ease duration-500">exporter via Excel</button></a>                       
+                </header>
                 <div class="p-3">
                     <div class="overflow-x-auto">
                         <table class="table-auto w-full">
@@ -28,26 +27,18 @@
                                         <div class="font-semibold text-left">No:</div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Nom</div>
+                                        <div class="font-semibold text-left">Nom du fournisseur</div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-left">catégorie</div>
+                                        <div class="font-semibold text-left">Téléphone </div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Quantité</div>
+                                        <div class="font-semibold text-left">Adresse</div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-center">prix unitaire</div>
+                                        <div class="font-semibold text-left">Modifer / archiver</div>
                                     </th>
-                                    <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-center">date de fabrication </div>
-                                    </th>
-                                     <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-center">date de d'expiration</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap">
-                                        <div class="font-semibold text-center">Modifcation / archivage</div>
-                                    </th>
+                                   
                                 </tr>
                             </thead>
                             <tbody class="text-sm divide-y divide-gray-100">
@@ -64,15 +55,7 @@
                                     <td class="p-2 whitespace-nowrap">
                                         <div class="text-center">??</div>
                                     </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class=" text-center">1400 </div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/07/2023</div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/12/2023</div>
-                                    </td>
+                                    
                                     <td class="p-2 whitespace-nowrap">
                                         <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
                                     </td>
@@ -82,22 +65,17 @@
                                         <div class="text-left">1</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left">philip.h@gmail.com</div>
+                                        <div class="text-left">alexshatov@gmail.com</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left font-medium text-green-500">$2,767.04</div>
+                                        <div class="text-left font-medium text-green-500">$2,890.66</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-lg text-center">??</div>
+                                        <div class="text-center">??</div>
                                     </td>
+                                    
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class=" text-center">1400 </div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/07/2023</div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/12/2023</div>
+                                        <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -105,22 +83,17 @@
                                         <div class="text-left">1</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left">mirkofisuk@gmail.com</div>
+                                        <div class="text-left">alexshatov@gmail.com</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left font-medium text-green-500">$2,996.00</div>
+                                        <div class="text-left font-medium text-green-500">$2,890.66</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-lg text-center">??</div>
+                                        <div class="text-center">??</div>
                                     </td>
+                                    
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class=" text-center">1400 </div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/07/2023</div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/12/2023</div>
+                                        <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -128,22 +101,17 @@
                                         <div class="text-left">1</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left">olga.s@cool.design</div>
+                                        <div class="text-left">alexshatov@gmail.com</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left font-medium text-green-500">$1,220.66</div>
+                                        <div class="text-left font-medium text-green-500">$2,890.66</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-lg text-center">??</div>
+                                        <div class="text-center">??</div>
                                     </td>
+                                    
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class=" text-center">1400 </div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/07/2023</div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/12/2023</div>
+                                        <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -151,28 +119,26 @@
                                         <div class="text-left">1</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left">longburak@gmail.com</div>
+                                        <div class="text-left">alexshatov@gmail.com</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-left font-medium text-green-500">$1,890.66</div>
+                                        <div class="text-left font-medium text-green-500">$2,890.66</div>
                                     </td>
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class="text-lg text-center">??</div>
+                                        <div class="text-center">??</div>
                                     </td>
+                                    
                                     <td class="p-2 whitespace-nowrap">
-                                        <div class=" text-center">1400 </div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/07/2023</div>
-                                    </td>
-                                    <td class="p-2 whitespace-nowrap">
-                                        <div class="text-center"> 14/12/2023</div>
+                                        <div class="text-center"> <a><button class="py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-5000 text-black ">modifer</button></a> /  <a><button class=" text-black py-2 px-2 bg-green-200 hover:bg-green-400 transition-all ease duration-500">archiver</button></a>  </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
+                </div>
+            </div>
+        </div>
+    </section>
                     
     <script src="./tailwind.js"> </script>
     
